@@ -1,1 +1,25 @@
-// This is supposed to be the queue header block
+// This is supposed to be the queue header block 
+
+// A header guard, also known as an include guard or pragma
+// once, is a preprocessor directive in C and C++ used to prevent a
+// particular header file from being included more than once in a single
+// compilation unit. It ensures that the contents of the header file are
+// processed only once, regardless of how many times it might be included in different parts of the code.
+
+#ifndef _QUEUE_     // To avoid multiple inclusion errors
+#define _QUEUE_
+
+// Including the internal header of the MSVC as it might contain some specifics or macros (Ambiguous as to why imported)
+#include<yvals_core.h>
+
+#if _STL_COMPILER_PREPROCESSOR
+
+//Including the neccessary headers
+#include<algorithm>
+#include<dequeue>
+#include<vector>
+
+
+
+
+
